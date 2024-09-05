@@ -8,5 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/user', [UserController::class, 'index']);
-Route::get('/user/tambah', [UserController::class, 'create']);
-Route::post('/user/simpan', [UserController::class, 'store']);
+Route::get('/user/adduser', [UserController::class, 'create']);
+Route::post('/user/store', [UserController::class, 'store']);

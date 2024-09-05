@@ -19,41 +19,29 @@
 </head>
 
 <body>
-    <a href="/user/tambah">Tambah Data</a>
+
     <div class="table-responsive">
-        <div id="printableArea">
-            <table class="table table-primary" border=1>
-                <thead>
-                    <tr>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Barcode</th>
+
+        <table class="table table-primary" border=1>
+            <thead>
+                <tr>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Barcode</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($user as $u)
+                    <tr class="">
+                        <td scope="row">{{ $u->name }}</td>
+                        <td>{{ $u->email }}</td>
+                        <td align="center">{!! DNS1D::getBarcodeHTML("$u->barcode", 'C39') !!}{{ $u->barcode }}</td>
                     </tr>
-                </thead>
-                <tbody>
-                    @foreach ($user as $u)
-                        <tr class="">
-                            <td scope="row">{{ $u->name }}</td>
-                            <td>{{ $u->email }}</td>
-                            <td align="center">{!! DNS1D::getBarcodeHTML("$u->barcode", 'C39') !!}{{ $u->barcode }}</td>
-                        </tr>
-                    @endforeach
-
-
-                </tbody>
-            </table>
-        </div>
+                @endforeach
+            </tbody>
+        </table>
+        <a href="/user/adduser">Add User</a>
     </div>
-    <button onclick="printDiv()">Print</button>
-
-    <script>
-        function printDiv() {
-            var printContents = document.getElementById('printableArea').innerHTML;
-            var originalContents = document.body.innerHTML;
-
-
-        }
-    </script>
 </body>
 
 </html>

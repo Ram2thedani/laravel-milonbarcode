@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="/user/simpan" method="post">
+    <form action="/user/store" method="post">
         @csrf
         <div class="mb-3">
             <label for="" class="form-label">Name</label>
