@@ -9,7 +9,7 @@
 
 ## About
 
-This is a simple laravel demo of barcode generator using milon barcode
+This is a simple laravel 11 demo of barcode generator using milon barcode
 
 https://github.com/milon/barcode
 
