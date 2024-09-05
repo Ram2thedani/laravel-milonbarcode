@@ -36,7 +36,6 @@
                             <td scope="row">{{ $u->name }}</td>
                             <td>{{ $u->email }}</td>
                             <td align="center">{!! DNS1D::getBarcodeHTML("$u->barcode", 'C39') !!}{{ $u->barcode }}</td>
-                            {{-- <td><img src="{{ asset('storage/' . $u->barcode) }}" alt=""></td> --}}
                         </tr>
                     @endforeach
 

@@ -15,28 +15,22 @@
             <label for="" class="form-label">Name</label>
             <input type="text" class="form-control" name="name" id="" aria-describedby="helpId"
                 placeholder="" />
-            <small id="helpId" class="form-text text-muted">Help text</small>
+
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Email</label>
-            <input type="text" class="form-control" name="email" id="" aria-describedby="helpId"
+            <input type="email" class="form-control" name="email" id="" aria-describedby="helpId"
                 placeholder="" />
-            <small id="helpId" class="form-text text-muted">Help text</small>
+
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Password</label>
-            <input type="text" class="form-control" name="password" id="" aria-describedby="helpId"
+            <input type="password" class="form-control" name="password" id="" aria-describedby="helpId"
                 placeholder="" />
-            <small id="helpId" class="form-text text-muted">Help text</small>
-        </div>
-        <div class="mb-3">
-            <label for="" class="form-label">barcode</label>
-            <input type="text" class="form-control" name="barcode" id="" aria-describedby="helpId"
-                placeholder="" />
-            <small id="helpId" class="form-text text-muted">Help text</small>
+
         </div>
 
-        <button type="submit">Simpan</button>
+        <button type="submit">Submit</button>
 
     </form>
 </body>

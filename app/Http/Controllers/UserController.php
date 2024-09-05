@@ -23,7 +23,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('user.tambah');
+        return view('user.create');
     }
 
     /**
@@ -38,7 +38,7 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password), // Hash the password
-            'barcode' => Str::random(5),
+            'barcode' => Str::random(10),
         ]);
 
         return redirect('/user');
