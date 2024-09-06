@@ -41,7 +41,7 @@ class UserController extends Controller
             'barcode' => Str::random(10),
         ]);
 
-        return redirect('/user');
+        return redirect('/');
     }
 
 
